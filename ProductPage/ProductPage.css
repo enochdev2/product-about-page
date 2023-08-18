@@ -1,0 +1,147 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    margin-top: 40px;
+    width: 85%;
+    height: 100%;
+    background-color: #f1f3f5;
+    padding-bottom:80px ;
+    
+}
+.heading{
+    width: 100%;
+    text-align: center;
+   margin: 30px;
+}
+.heading p{
+    width: 90%;
+    margin: auto;
+}
+.title{
+    margin: 20px;
+    font-size: 2rem;
+    color: rgb(235, 29, 173);
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+.product-image{
+    height: 350px;
+    overflow: hidden;   
+}
+.product-info{
+    height: 350px;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 10px;
+}
+.pic{
+    width: 95%;
+    object-fit: cover;
+}
+.button-container {
+    width: 100%;
+    display: flex;
+}
+.product-info .active{
+    background-color: #ffffff;
+}
+.btn{
+    width: 33.33%;
+    height: 40px;
+    border: none;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+}
+.product-info .active {
+    display: block;    
+}
+
+.desc{
+    display: none;
+    margin-top: 20px;
+    height: 300px;
+}
+.desc p{
+    font-size: 1.2rem;
+    align-items: justify;
+    line-height: 25px;
+    margin-left: 20px ;
+}
+.desc .titled {
+ margin: 20px;
+}
+.desc h4,
+.desc h3{
+    margin: 5px 0;
+    margin-left: 20px;
+    color: rgb(235, 29, 173);
+}
+.desc h5{
+    margin: 14px 2px;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: rgb(235, 29, 173);
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.time{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    gap: 5px;
+    font-size: 1.4rem;
+    display: grid;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+.time h4{
+    
+    margin: auto;
+    font-size: 3rem;
+
+}
+.time p{
+    position: absolute;
+    left: -3px;
+    z-index: 33;
+    color: rgb(247, 242, 246); 
+    text-shadow: 1px 1px 1px #f407e0;
+}
+.count-down-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    gap: 5px;
+    width: 330px;
+    margin: 20px auto;
+}
+@media screen and (max-width:900px) {
+    .product{
+        display: grid;
+        grid-template-columns: repeat(1, 90%);
+        gap: 20px;
+    }
+    .container{
+        min-height: 100%;
+        padding-bottom: 20px;
+    }
+}
